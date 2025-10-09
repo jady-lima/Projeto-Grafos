@@ -1,6 +1,11 @@
 //Função que determina o número total de arestas.
 //Gabrielle
 
+/*
+Entrada: série de vértices até comando "fim" (string), série de arestas até comando "fim" (string)
+Saída: número total de arestas do grafo (inteiro)
+*/
+
 #include <iostream>
 #include <map>
 #include <vector>

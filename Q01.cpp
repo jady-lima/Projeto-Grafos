@@ -1,6 +1,11 @@
 //Criação do Grafo a partir da Lista de Adjacências
 //Gabrielle
 
+/*
+Entrada: número de vértices (inteiro), lista de vértices (string) um a um, lista de vértices adjacentes para cada vértice (série de entradas até comando "fim") (string)
+Saída: Impressão do grafo por meio da representação das arestas ('tuplas' de vértices no formato "a - b")
+*/
+
 #include <iostream>
 #include <map>
 #include <vector>
