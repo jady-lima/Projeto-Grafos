@@ -1,3 +1,6 @@
+// Questão 10 - Exclusão de um vértice existente usando Lista de Adjacências e Matriz de Adjacências
+// Sebastião
+
 #include <iostream>
 #include <string>
 #include <vector>

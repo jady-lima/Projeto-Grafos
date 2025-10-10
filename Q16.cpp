@@ -1,3 +1,6 @@
+// Questão 16 - Representação do Digrafo a partir da Matriz de Adjacências
+// Sebastião
+
 #include <iostream>
 #include <string>
 #include <vector>

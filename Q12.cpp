@@ -1,3 +1,6 @@
+// Questão 12 - Determinar se um grafo é bipartido
+// Sebastião
+
 #include <iostream>
 #include <string>
 #include <vector>

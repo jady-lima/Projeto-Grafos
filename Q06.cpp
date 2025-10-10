@@ -1,3 +1,6 @@
+// Questão 6 - Função que determina se dois vértices são adjacentes
+// Sebastião
+
 #include <iostream>
 #include <string>
 #include <vector>
