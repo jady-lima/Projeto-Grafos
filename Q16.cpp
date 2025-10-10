@@ -7,7 +7,7 @@
 #include <map>
 #include <fstream>
 #include <sstream>
-#include <iomanip> // Para formatar a impressão da matriz
+#include <iomanip>
 
 class Digrafo {
 public:
