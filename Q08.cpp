@@ -1,4 +1,4 @@
-//Função que determina o número total de arestas.
+//questao 8 - Função que determina o número total de arestas.
 //Gabrielle
 
 /*
