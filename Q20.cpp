@@ -8,7 +8,7 @@ Entrada:
     - Número de arestas do dígrafo (int).
     - Para cada aresta: o vértice de origem e o vértice de destino (dois inteiros), 
       separados por espaço. Os vértices devem ser informados como números 
-      inteiros de 1 a V, onde V é o número total de vértices. // <-- ALTERAÇÃO NO COMENTÁRIO
+      inteiros de 1 a V, onde V é o número total de vértices. 
 
 Saída:
     - classificação de cada aresta do dígrafo em uma das quatro categorias (Árvore, Retorno, Avanço ou Cruzamento)
@@ -85,8 +85,7 @@ void Grafo::DFS_Completo() {
     
     std::cout << "\n--- Tempos de Descoberta e Finalizacao ---" << std::endl;
     for (int i = 0; i < V; ++i) {
-        // Mostra o vértice como 'i + 1' para o usuário
-        std::cout << "Vertice " << i + 1 << ": " // <-- ALTERAÇÃO
+        std::cout << "Vertice " << i + 1 << ": " 
                   << "Descoberta = " << d[i]
                   << ", Finalizacao = " << f[i] << std::endl;
     }
@@ -105,18 +104,18 @@ void Grafo::DFS_Visit(int u) {
     for (int v : adj[u]) {
         if (cor[v] == BRANCO) {
             // Mostra os vértices como 'u + 1' e 'v + 1'
-            std::cout << "(" << u + 1 << " -> " << v + 1 << ") - Aresta de Arvore" << std::endl; // <-- ALTERAÇÃO
+            std::cout << "(" << u + 1 << " -> " << v + 1 << ") - Aresta de Arvore" << std::endl;
             pai[v] = u;
             DFS_Visit(v);
         }
         else if (cor[v] == CINZA) {
-            std::cout << "(" << u + 1 << " -> " << v + 1 << ") - Aresta de Retorno (ciclo)" << std::endl; // <-- ALTERAÇÃO
+            std::cout << "(" << u + 1 << " -> " << v + 1 << ") - Aresta de Retorno (ciclo)" << std::endl; 
         }
         else if (cor[v] == PRETO) {
             if (d[u] < d[v]) {
-                std::cout << "(" << u + 1 << " -> " << v + 1 << ") - Aresta de Avanco" << std::endl; // <-- ALTERAÇÃO
+                std::cout << "(" << u + 1 << " -> " << v + 1 << ") - Aresta de Avanco" << std::endl; 
             } else {
-                std::cout << "(" << u + 1 << " -> " << v + 1 << ") - Aresta de Cruzamento" << std::endl; // <-- ALTERAÇÃO
+                std::cout << "(" << u + 1 << " -> " << v + 1 << ") - Aresta de Cruzamento" << std::endl; 
             }
         }
     }
@@ -146,7 +145,7 @@ int main() {
 
     std::cout << "Digite as arestas (formato origem -> destino)." << std::endl;
     // Informa ao usuário para usar a numeração de 1 a N
-    std::cout << "** Os vertices devem ser nomeados de 1 a " << numVertices << ".**" << std::endl; // <-- ALTERAÇÃO
+    std::cout << "** Os vertices devem ser nomeados de 1 a " << numVertices << ".**" << std::endl; 
 
     // Ler cada aresta em um laço
     for (int i = 0; i < numArestas; ++i) {
@@ -155,14 +154,14 @@ int main() {
         std::cin >> origem >> destino;
 
         // Validação para garantir que os vértices estão no intervalo de 1 a N
-        while (origem < 1 || origem > numVertices || destino < 1 || destino > numVertices) { // <-- ALTERAÇÃO
-            std::cout << "Entrada invalida. Vertices devem estar entre 1 e " << numVertices << "." << std::endl; // <-- ALTERAÇÃO
+        while (origem < 1 || origem > numVertices || destino < 1 || destino > numVertices) { 
+            std::cout << "Entrada invalida. Vertices devem estar entre 1 e " << numVertices << "." << std::endl; 
             std::cout << "Digite a aresta " << i + 1 << " novamente: ";
             std::cin >> origem >> destino;
         }
 
         // Converte a entrada do usuário (1 a N) para o índice interno (0 a N-1)
-        g.adicionarAresta(origem - 1, destino - 1); // <-- ALTERAÇÃO
+        g.adicionarAresta(origem - 1, destino - 1); 
     }
 
     std::cout << "\nGrafo criado com sucesso!" << std::endl;
