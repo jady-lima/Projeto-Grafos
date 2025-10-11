@@ -56,7 +56,7 @@ void imprime_vertices() {
 
 int main() {
     // Leitura das arestas do arquivo
-    string nome_arquivo = "arestas.txt";
+    string nome_arquivo = "GRAFO_0.txt";
     recebe_arestas(nome_arquivo);
 
     // Imprime os vértices

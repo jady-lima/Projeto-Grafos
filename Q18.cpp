@@ -74,7 +74,7 @@ void imprime_arestas() {
 
 int main() {
     // Leitura das arestas do grafo
-    recebe_arestas("digrafo.txt");
+    recebe_arestas("DIGRAFO3.txt");
 
     // Imprime os vértices
     imprime_vertices();

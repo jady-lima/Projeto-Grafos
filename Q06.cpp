@@ -50,7 +50,7 @@ public:
 
 int main(int argc, char* argv[]) {
     if (argc < 2) {
-        std::cerr << "Uso: " << argv[0] << " <arquivo.txt>" << std::endl;
+        std::cerr << "Uso: " << argv[0] << " GRAFO_0.txt" << std::endl;
         return 1;
     }
 

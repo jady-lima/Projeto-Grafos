@@ -86,7 +86,7 @@ int main() {
     map<string, vector<string>> matriz;
 
     // Ler o arquivo de entrada
-    string nome_arquivo = "digrafo.txt";
+    string nome_arquivo = "DIGRAFO2.txt";
     recebe_arestas(nome_arquivo, matriz);
 
     // Inicializa todo o map como não visitado

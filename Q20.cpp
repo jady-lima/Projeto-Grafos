@@ -8,7 +8,7 @@ Entrada:
     - Número de arestas do dígrafo (int).
     - Para cada aresta: o vértice de origem e o vértice de destino (dois inteiros), 
       separados por espaço. Os vértices devem ser informados como números 
-      inteiros de 1 a V, onde V é o número total de vértices. 
+      inteiros de 1 a V, onde V é o número total de vértices. s
 
 Saída:
     - classificação de cada aresta do dígrafo em uma das quatro categorias (Árvore, Retorno, Avanço ou Cruzamento)
